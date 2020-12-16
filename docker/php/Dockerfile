@@ -22,7 +22,7 @@ RUN docker-php-ext-install mysqli pdo_mysql
 RUN pecl install xdebug-2.8.1 && docker-php-ext-enable xdebug
 
 # Composer
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer --version=1.10.19
 
 # Symfony tool
 RUN wget https://get.symfony.com/cli/installer -O - | bash && \
