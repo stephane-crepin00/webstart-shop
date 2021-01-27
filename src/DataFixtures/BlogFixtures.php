@@ -13,7 +13,7 @@ class BlogFixtures extends Fixture
     {
         $slugger = new AsciiSlugger();
 
-        for ($i = 0; $i < 50; $i++) {
+        for ($i = 0; $i < 10; $i++) {
             $post = new Post();
             $post->setTitle("Title" . $i)
                 ->setSlug($slugger->slug($post->getTitle()))
